@@ -11,7 +11,8 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
+      editor: './src/js/editor.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -33,7 +34,7 @@ module.exports = () => {
         inject: true,
         name: 'JATE',
         short_name: 'JATE',
-        description: '',
+        description: 'Just Another Text Editor',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
